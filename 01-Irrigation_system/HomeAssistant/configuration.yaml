@@ -1,0 +1,53 @@
+switch: 
+  - platform: mqtt
+    name: "Pump zone 1"
+    state_topic: "home/irrigation/zone_1/pump/state"
+    command_topic: "home/irrigation/zone_1/pump/set"
+    availability_topic: "home/irrigation/zone_1/pump/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    qos: 0
+    retain: true
+    icon: mdi:water-pump
+    
+  - platform: mqtt
+    name: "SetPoint mode"
+    state_topic: "home/irrigation/zone_1/setpointmode/state"
+    command_topic: "home/irrigation/zone_1/setpointmode/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    qos: 0
+    retain: true
+    icon: mdi:water-off  
+    
+  - platform: mqtt
+    name: "DeepSleep mode"
+    state_topic: "home/irrigation/zone_1/deepsleepmode/state"
+    command_topic: "home/irrigation/zone_1/deepsleepmode/set"
+    payload_on: "ON"
+    payload_off: "OFF"
+    qos: 0
+    retain: true
+    icon: mdi:water-off   
+
+
+sensor:
+  - platform: mqtt
+    name: "Humidity"
+    state_topic: "home/irrigation/zone_1/percentage/value"
+    unit_of_measurement: "%"
+    icon: mdi:water-percent
+
+  - platform: mqtt
+    name: "Level sensor"
+    state_topic: "home/irrigation/zone_1/levelsensor/value"  
+    icon: mdi:hydraulic-oil-level
+
+
+input_number:
+  irrigation_setpoint:
+    name: Umbral
+    initial: 50
+    min: 0
+    max: 100
+    step: 1

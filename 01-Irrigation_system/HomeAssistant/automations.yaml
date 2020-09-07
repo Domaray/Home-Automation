@@ -1,0 +1,30 @@
+- id: '2097530536666'
+  alias: Send SetPoint to board
+  description: ''
+  trigger:
+  - entity_id: input_number.irrigation_setpoint
+    platform: state
+  action:
+  - data_template:
+      payload: '{{ states(''input_number.irrigation_setpoint'') | int }}'
+      retain: true
+      topic: home/irrigation/zone_1/setpointmode/value
+    service: mqtt.publish
+  mode: single
+
+
+- id: '2098381445567'
+  alias: Notify when board is awake
+  description: ''
+  trigger:
+    platform: mqtt
+    topic: home/irrigation/zone_1/pump/available
+    # Optional
+    payload: "online"
+    encoding: "utf-8"
+  condition: []
+  action:
+  - data_template:
+      message: The board is awake
+      title: Irrigation system active
+    service: notify.mobile_app_xxx
