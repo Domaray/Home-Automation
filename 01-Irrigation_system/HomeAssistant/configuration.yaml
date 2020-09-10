@@ -28,7 +28,7 @@ switch:
     payload_off: "OFF"
     qos: 0
     retain: true
-    icon: mdi:water-off   
+    icon: mdi:eye  
 
 
 sensor:

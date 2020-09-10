@@ -1,7 +1,14 @@
 /*  
  *  IRRIGATION SYSTEM WITH NODEMCU + HOMEASSISTANT + MQTT 
  *  
- *  
+ *   _____                                                     
+ *  |  __ \                                                    
+ *  | |  | |   ___    _ __ ___     __ _   _ __    __ _   _   _ 
+ *  | |  | |  / _ \  | '_ ` _ \   / _` | | '__|  / _` | | | | |
+ *  | |__| | | (_) | | | | | | | | (_| | | |    | (_| | | |_| |
+ *  |_____/   \___/  |_| |_| |_|  \__,_| |_|     \__,_|  \__, |
+ *                                                        __/ |
+ *                                                       |___/                                                   
  *  DEVELOPED BY DOMARAY. Sept'20. 
  *  See www.domaray.com for more info.
  *  
