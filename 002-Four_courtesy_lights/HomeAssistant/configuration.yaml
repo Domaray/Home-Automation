@@ -1,0 +1,55 @@
+
+light:
+
+  - platform: mqtt
+    name: "courtesy Salon"
+    state_topic: "home/lights/courtesy_1/state"
+    command_topic: "home/lights/courtesy_1/set"
+    availability_topic: "home/lights/courtesy_1/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    #state_on: "ON"
+    #state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+    
+  - platform: mqtt
+    name: "courtesy Hab_1"
+    state_topic: "home/lights/courtesy_2/state"
+    command_topic: "home/lights/courtesy_2/set"
+    availability_topic: "home/lights/courtesy_2/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    #state_on: "ON"
+    #state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "courtesy Hab_2"
+    state_topic: "home/lights/courtesy_3/state"
+    command_topic: "home/lights/courtesy_3/set"
+    availability_topic: "home/lights/courtesy_3/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    #state_on: "ON"
+    #state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+
+  - platform: mqtt
+    name: "courtesy Hab_3"
+    state_topic: "home/lights/courtesy_4/state"
+    command_topic: "home/lights/courtesy_4/set"
+    availability_topic: "home/lights/courtesy_4/available"
+    payload_on: "ON"
+    payload_off: "OFF"
+    #state_on: "ON"
+    #state_off: "OFF"
+    optimistic: false
+    qos: 0
+    retain: true
+    

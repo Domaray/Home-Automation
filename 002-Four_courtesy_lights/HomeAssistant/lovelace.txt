@@ -1,0 +1,7 @@
+entities:
+  - entity: light.courtesy_1
+  - entity: light.courtesy_2
+  - entity: light.courtesy_3
+  - entity: light.courtesy_4
+title: Courtesy lights
+type: entities
