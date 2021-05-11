@@ -1,0 +1,15 @@
+- id: '1614703840000'
+  alias: Main door - Open - Notification
+  description: Mobile notification when main door is open
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.main_door_sensor
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - data_template:
+      message: Main door opened
+      title: Main door opened
+    service: notify.mobile_app_xxx
+  mode: single

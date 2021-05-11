@@ -1,0 +1,14 @@
+entities:
+  - entity: binary_sensor.main_door_sensor
+  - entity: sensor.main_door_sensor_battery
+title: Door sensor
+type: entities
+state_color: true
+
+
+
+type: logbook
+entities:
+  - binary_sensor.main_door_sensor
+hours_to_show: 24
+title: Door sensor
